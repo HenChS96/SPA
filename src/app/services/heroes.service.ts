@@ -73,7 +73,7 @@ export class HeroesService {
       return this.heroes[i];
     }
 
-    searchHeroes( termino: string ){
+    searchHeroes(termino: string){
 
       let heroesArr: Heroe[] = [];
       termino = termino.toLowerCase();
@@ -85,9 +85,7 @@ export class HeroesService {
           heroesArr.push(heroe);
 
         }
-
       }
-
       return heroesArr;
     }
 
