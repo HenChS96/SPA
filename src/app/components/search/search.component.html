@@ -13,19 +13,6 @@
 
 <div class="card-columns">
 
-<div class="card animated fadeIn fast" *ngFor="let searchs of search; let i = index">
-  <img class="card-img-top img-fluid" [src]="searchs.img" [alt]="searchs.nombre">
-  <div class="card-body">
-    <h5 class="card-title">{{ searchs.nombre }}</h5>
-    <p class="card-text"> {{ searchs.bio }} </p>
-    <p class="card-text"><small class="text-muted"> {{ searchs.aparicion }} </small></p>
-
-    <button type="button" class="btn btn-outline-primary btn-block" (click)="viewsearchs(i)">
-      View more...
-    </button> 
-
-    <!-- <a [routerLink]="['/searchs', i]" class="btn btn-outline-primary">See More...</a> -->
-  </div>
-</div>
+    <app-heroe-card [heroe]="foo" [index]="i" *ngFor="let foo of search; let i = index"></app-heroe-card>
 
 </div>
